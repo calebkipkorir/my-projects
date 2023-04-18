@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> DoctorCare Hospital</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to DoctorCare Hospital</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact Us</a></li>
+		
+				<div class="login-container">
+					<button class="login-toggle">Sign up / Login</button>
+					<div class="login-form">
+					  <form>
+						<h2>Sign up</h2>
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password">
+						<button type="submit">Sign up</button>
+					  </form>
+					  <form>
+						<h2>Login</h2>
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username">
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password">
+						<button type="submit">Login</button>
+					  </form>
+					</div>
+				  </div>
+				 </div>
+			
+			  <li>
+				<form class="search-form" action="/search" role="search" method="GET" style=" width: 184px;margin: 9px 15px 9px 16px;">
+					<div id="searchBox">
+						<div class="SearchBox" data-activate-omnibox="true">
+							<button type="submit" class="btn searchbtn"><a class="SearchButton" href="javascript:" style="line-height: 36px;"><span><i class="fa fa-search search"></i></span></a></button>
+							<div>
+								<input type="search" class="CoveoQueryBox form-control search-input" placeholder="Search Term" name="searchword">
+								
+							</div>
+						</div>
+						
+					</div>
+					<div class="logo">
+						<img src="logo.jpeg" width="200" height="180">
+					  </div>
+				</form>
+			</li>
+
+		</nav>
+	</header>
+	<main>
+		<section id="banner">
+			<h2>Welcome to DoctorCare Hospital</h2>
+			<p>We are committed to providing the best healthcare services to our patients.</p>
+			<a href="#" class="btn">Learn More</a>
+		</section>
+		<section id="services">
+			<h3>Our Services</h3>
+			<p>We offer a wide range of medical services to meet your healthcare needs.</p>
+			<ul>
+
+				<li>Emergency Care</li>
+				<li>Diagnostic Services</li>
+				<li>Dental Services</li>
+				<li>General Surgery</li>
+				<li>Maternity Services</li>
+				<li>Intensive Care Unit</li>
+				<li>And more</li>
+			</ul> 
+
+		</section>
+		<section id="about">
+			<h3>About Us</h3>
+			<p>We are a leading healthcare provider in the region, with a team of highly skilled and experienced doctors and nurses.</p>
+		</section>
+		<section id="contact">
+			<h3>Contact Us</h3>
+			<form>
+				<label>Name:</label>
+				<input type="text" name="name">
+				<label>Email:</label>
+				<input type="email" name="email">
+				<label>Message:</label>
+				<textarea name="message"></textarea>
+				<input type="submit" value="Send">
+				<div class="custom">
+					<div class="modal" id="book_appointment_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title" id="myModalLabel4">Request Appointment</h4>
+								</div>
+								<div class="modal-body" id="profile-1">
+									<div class="row">
+										<div class="col-md-12">
+											<form action="#" id="appointment_form" class="sky-form" method="post">
+												<fieldset>
+													<section>
+														<div class="row">
+															<label class="label col col-3">Name:</label>
+															<div class="col col-9">
+																<label class="input validate-input">
+																<i class="icon-append fa fa-user"></i>
+																<input class="inputbox" type="text" name="fullname" id="fullname" error_msg="Please Enter your Name"/>
+															</label>
+															</div>
+														</div>
+			
+														<div class="row">
+															<label class="label col col-3">Phone No:</label>
+															<div class="col col-9">
+																<label class="input validate-input">
+																<i class="icon-append fa fa-phone"></i>
+																<input class="inputbox" type="text" name="phone" id="phone" error_msg="Please Enter Your Phone Number" Phone Number>
+															</label>
+															</div>
+														</div>
+			
+			
+														<div class="row">
+															<label class="label col col-3">Email:</label>
+															<div class="col col-9">
+																<label class="input validate-input">
+																<i class="icon-append fa fa-envelope"></i>
+																<input class="inputbox" type="text" name="email" id="email" error_msg="Please Enter Your Email">
+															</label>
+															</div>
+														</div>
+			
+														<div class="row">
+															<label class="label col col-3">Gender:</label>
+															<div class="col col-9">
+																<label class="input validate-input">
+															<div class="inline-group">
+																				 <label class="radio"><input class="inputbox" type="radio" name="gender" checked="" value="Male" id="gender"><i class="rounded-x"></i>Male</label>
+																<label class="radio"><input class="inputbox" type="radio" name="gender" value="Female" id="gender"><i class="rounded-x"></i>Female</label>
+															</div>
+															</label>
+														</div>
+										</div> <div class="row">
+											<label class="label">Appointment Date:</label>
+											<div class="col col-9">
+												<label class="input validate-input">
+																<i class="icon-append fa fa-calendar"></i>
+																										  <input class="inputbox" type="text" name="date" id="date" placeholder="Enter Appointment date" error_msg="Please Enter Appointment Date"/>
+																
+															</label> 
+															<div class="modal-footer">
+																<button type="button" class="close2 btn btn-default" data-dismiss="modal">Close</button>
+																<button type="button" class="btn btn-danger long-btn-20 sub-btn" id="submit_appointment">Submit Appointment</button>
+															</div>
+
+											</div>
+										</div>
+
+
+		</section>
+	</main>
+	<footer>
+		<p1>&copy; 2023 Amos caleb kipkorir. All rights reserved.</p1>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
